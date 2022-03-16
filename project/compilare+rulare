@@ -1,0 +1,4 @@
+clientI.c : gcc -Wno-format clientI.c -o clientI -Wno-deprecated-declarations -Wno-format-security -lm `pkg-config --cflags --libs gtk+-3.0` -export-dynamic
+server.c: gcc -pthread server.c -o server -lsqlite3
+./clientI 127.0.0.1 2022
+./server
