@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkWindow" id="window">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="resizable">False</property>
+    <property name="default-width">800</property>
+    <property name="default-height">600</property>
+    <signal name="remove" handler="on_window_close" swapped="no"/>
+    <child>
+      <object class="GtkFixed" id="fixed1">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkImage" id="background">
+            <property name="width-request">800</property>
+            <property name="height-request">600</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="pixbuf">fundal.jpg</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="buttonStart">
+            <property name="label" translatable="yes">start</property>
+            <property name="width-request">103</property>
+            <property name="height-request">53</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes">click me!</property>
+            <signal name="clicked" handler="on_buttonStart_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">342</property>
+            <property name="y">217</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="title">
+            <property name="width-request">237</property>
+            <property name="height-request">80</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Quizz Game</property>
+            <attributes>
+              <attribute name="font-desc" value="Abyssinica SIL Bold 32"/>
+              <attribute name="foreground" value="#ffffffffffff"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">265</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="labelUsername">
+            <property name="width-request">189</property>
+            <property name="height-request">52</property>
+            <property name="can-focus">False</property>
+            <property name="no-show-all">True</property>
+            <property name="label" translatable="yes">Entry username:</property>
+            <attributes>
+              <attribute name="font-desc" value="Ubuntu Medium 18"/>
+              <attribute name="foreground" value="#ffffffffffff"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">299</property>
+            <property name="y">134</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="entryUsername">
+            <property name="width-request">216</property>
+            <property name="height-request">53</property>
+            <property name="can-focus">True</property>
+            <property name="no-show-all">True</property>
+            <property name="max-width-chars">50</property>
+            <signal name="changed" handler="on_entryUsername_changed" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">287</property>
+            <property name="y">185</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="buttonPlay">
+            <property name="label" translatable="yes">play</property>
+            <property name="width-request">73</property>
+            <property name="height-request">36</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="no-show-all">True</property>
+            <signal name="clicked" handler="on_buttonPlay_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">359</property>
+            <property name="y">249</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="labelInfo">
+            <property name="width-request">311</property>
+            <property name="height-request">59</property>
+            <property name="can-focus">False</property>
+            <property name="no-show-all">True</property>
+            <attributes>
+              <attribute name="font-desc" value="Ubuntu Medium 24"/>
+              <attribute name="foreground" value="#ffffffffffff"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">143</property>
+            <property name="y">183</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="buttonLeave">
+            <property name="label" translatable="yes">leave</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_buttonLeave_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">711</property>
+            <property name="y">540</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="a">
+            <property name="width-request">200</property>
+            <property name="height-request">50</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="no-show-all">True</property>
+            <property name="draw-indicator">True</property>
+            <signal name="toggled" handler="on_buttonA_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">170</property>
+            <property name="y">243</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="b">
+            <property name="width-request">200</property>
+            <property name="height-request">50</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="no-show-all">True</property>
+            <property name="draw-indicator">True</property>
+            <signal name="toggled" handler="on_buttonB_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">170</property>
+            <property name="y">282</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="c">
+            <property name="width-request">200</property>
+            <property name="height-request">50</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="no-show-all">True</property>
+            <property name="draw-indicator">True</property>
+            <signal name="toggled" handler="on_buttonC_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">450</property>
+            <property name="y">240</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="d">
+            <property name="width-request">200</property>
+            <property name="height-request">50</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">False</property>
+            <property name="no-show-all">True</property>
+            <property name="draw-indicator">True</property>
+            <signal name="toggled" handler="on_buttonD_toggled" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">450</property>
+            <property name="y">282</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="labelQuestion">
+            <property name="width-request">250</property>
+            <property name="height-request">60</property>
+            <property name="can-focus">False</property>
+            <property name="no-show-all">True</property>
+            <property name="label" translatable="yes">label</property>
+            <attributes>
+              <attribute name="font-desc" value="Ubuntu Medium 15"/>
+              <attribute name="foreground" value="#ffffffffffff"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">147</property>
+            <property name="y">181</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="buttonRules">
+            <property name="label" translatable="yes">game rules</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_buttonRules_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">21</property>
+            <property name="y">540</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="labelRules">
+            <property name="width-request">480</property>
+            <property name="height-request">310</property>
+            <property name="can-focus">False</property>
+            <property name="no-show-all">True</property>
+            <attributes>
+              <attribute name="font-desc" value="Ubuntu Medium 15"/>
+              <attribute name="foreground" value="#ffffffffffff"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">123</property>
+            <property name="y">90</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="buttonRevert">
+            <property name="label">gtk-revert-to-saved</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="no-show-all">True</property>
+            <property name="use-stock">True</property>
+            <property name="always-show-image">True</property>
+            <signal name="clicked" handler="on_buttonRevert_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">338</property>
+            <property name="y">379</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="buttonSubmit">
+            <property name="label" translatable="yes">submit</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="no-show-all">True</property>
+            <signal name="clicked" handler="on_button_submit_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">313</property>
+            <property name="y">347</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="labelTimer">
+            <property name="width-request">100</property>
+            <property name="height-request">29</property>
+            <property name="can-focus">False</property>
+            <property name="no-show-all">True</property>
+            <attributes>
+              <attribute name="font-desc" value="Ubuntu Medium 15"/>
+              <attribute name="foreground" value="#f8f8e4e45c5c"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">290</property>
+            <property name="y">126</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="labelRecorded">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="can-focus">False</property>
+            <property name="no-show-all">True</property>
+            <property name="label" translatable="yes">Response recorded!</property>
+            <attributes>
+              <attribute name="font-desc" value="Ubuntu Medium 14"/>
+              <attribute name="foreground" value="#3fffbfffa8a5"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">280</property>
+            <property name="y">382</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="labelWinner">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="can-focus">False</property>
+            <property name="no-show-all">True</property>
+            <attributes>
+              <attribute name="font-desc" value="Ubuntu Mono Bold Italic 20"/>
+              <attribute name="foreground" value="#ffffffffffff"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">230</property>
+            <property name="y">210</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="labelOver">
+            <property name="can-focus">False</property>
+            <property name="no-show-all">True</property>
+            <property name="label" translatable="yes">game over</property>
+            <attributes>
+              <attribute name="font-desc" value="Ubuntu Medium Italic 25"/>
+              <attribute name="foreground" value="#f6f6d3d32d2d"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">288</property>
+            <property name="y">335</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="labelError">
+            <property name="width-request">100</property>
+            <property name="height-request">80</property>
+            <property name="can-focus">False</property>
+            <property name="no-show-all">True</property>
+            <attributes>
+              <attribute name="font-desc" value="Ubuntu Mono Bold Italic 14"/>
+              <attribute name="foreground" value="#ffffa3a34848"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">152</property>
+            <property name="y">431</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
